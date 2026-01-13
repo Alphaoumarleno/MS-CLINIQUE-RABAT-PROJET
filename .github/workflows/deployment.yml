@@ -88,7 +88,7 @@ jobs:
                   --spring.datasource.username=${DATABASE_USERNAME} \
                   --spring.datasource.password=${DATABASE_USERPASSWORD} \
                   --spring.datasource.url=${DATABASE_URL} \
-                  --spring.sql.init.mode=true \
+                  --spring.sql.init.mode=NEVER \
                   > /var/log/ms-clinique-rabat.log 2>&1 < /dev/null &
 
                 disown
