@@ -20,7 +20,6 @@ jobs:
           port: ${{ secrets.PORT }}
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-
           script: |
             set -e
             mkdir -p /opt/ms-clinique-rabat/microservices
