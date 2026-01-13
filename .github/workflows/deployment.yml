@@ -7,9 +7,7 @@ on:
     branches:
       - main
   workflow_dispatch:
-env:
-  GROUP: /opt/clinique-rabat
-  PROJECT: ms-clinique-rabat
+
 jobs:
   create-folder:
     name: Create folder on server
@@ -23,7 +21,7 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            mkdir -p ${{env.GROUP}}/${{env.PROJECT}}
+            mkdir -p /opt/ms-clinique-rabat/microservices
 
   build-project:
     name: Build Spring Boot application
@@ -53,7 +51,7 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: springBoot/target/GestionClinique-0.0.1-SNAPSHOT.jar
-          target: ${{env.GROUP}}/${{env.PROJECT}}
+          target: /opt/ms-clinique-rabat/microservices
           overwrite: true
 
   run-project:
