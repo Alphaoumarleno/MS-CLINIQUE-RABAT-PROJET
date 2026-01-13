@@ -18,6 +18,7 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
+      
 
       - name: Create remote folder
         run: |
@@ -25,8 +26,8 @@ jobs:
               -o IdentitiesOnly=yes \
               -o StrictHostKeyChecking=no \
               -o UserKnownHostsFile=/dev/null \
-              root@${{ secrets.SERVER_HOST }} \
-              "mkdir -p /opt/ms-clinique-rabat/microservices"
+              root@${{ secrets.SERVER_HOST }} ...
+
 
   build-project:
     name: Build Spring Boot application
