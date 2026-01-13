@@ -43,3 +43,14 @@ jobs:
         run: |
           mvn clean package spring-boot:repackage -DskipTests
           ls -al target
+
+      - name: Copy JAR to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          port: ${{ secrets.PORT }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: springBoot/target/GestionClinique-0.0.1-SNAPSHOT.jar
+          target: /opt/ms-clinique-rabat/microservices
+          overwrite: true
