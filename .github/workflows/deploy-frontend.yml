@@ -41,7 +41,7 @@ jobs:
             sudo mkdir -p /var/www/clinique-rabat
             sudo chown -R www-data:www-data /var/www/clinique-rabat
 
-      - name: Upload dist to server
+      - name: Deploy dist to Nginx root
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SERVER_HOST }}
