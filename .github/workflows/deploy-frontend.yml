@@ -50,5 +50,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: website_Clinique_rabat/dist/*
           target: /var/www/clinique-rabat
-          strip_components: 3
           overwrite: true
+
