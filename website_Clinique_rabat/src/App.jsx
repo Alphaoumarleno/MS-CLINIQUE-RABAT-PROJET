@@ -28,7 +28,7 @@ function App() {
           <Router>
             <GlobalNotificationHandler />
             <Routes>
-              <Route path="/" element={<PageLogin />} />
+              <Route path="/connexion" element={<PageLogin />} />
               <Route path="/calendar" element={<Calendrier />} />
               <Route path="/pagemedecin" element={<PageMedecin />} />
               <Route element={<ProtectedRoute />}>
