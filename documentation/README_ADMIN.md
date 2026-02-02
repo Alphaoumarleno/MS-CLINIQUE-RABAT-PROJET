@@ -1,199 +1,183 @@
-# Guide Administrateur - Système de Gestion Clinique
+# 👨‍💼 Guide Administrateur – Système de Gestion Clinique
 
-## 👨‍💼 Rôle de l'Administrateur
-
-L'administrateur est responsable de la gestion complète du système de la clinique. Il a accès à toutes les fonctionnalités et peut gérer les utilisateurs, les patients, et surveiller l'activité globale de la clinique.
-
-## 🔐 Connexion
-
-1. Accédez à la page de connexion
-2. Entrez vos identifiants administrateur
-3. Vous serez redirigé vers le tableau de bord administrateur
-
-## 📊 Tableau de Bord (Dashboard)
-
-### Vue d'ensemble
-- **Statistiques en temps réel** : Nombre de patients, rendez-vous, consultations
-- **Graphiques** : Évolution des activités, répartition par service
-- **Alertes** : Notifications importantes et tâches en attente
-
-### Fonctionnalités du Dashboard
-- Consultation des statistiques globales
-- Monitoring de l'activité des médecins
-- Suivi des performances de la clinique
-- Accès rapide aux fonctions principales
-
-## 👥 Gestion des Utilisateurs
-
-### Liste des Utilisateurs
-- **Voir tous les utilisateurs** : Médecins, secrétaires, autres administrateurs
-- **Filtrer par rôle** : Recherche et tri par type d'utilisateur
-- **Statut des comptes** : Actif, inactif, en attente
-
-### Créer un Nouvel Utilisateur
-1. Cliquez sur "Ajouter un utilisateur"
-2. Remplissez le formulaire :
-   - Informations personnelles (nom, prénom, email, téléphone)
-   - Rôle (ROLE_ADMIN, ROLE_MEDECIN, ROLE_SECRETAIRE)
-   - Mot de passe temporaire
-   - Permissions spécifiques
-3. Validez la création
-
-### Modifier un Utilisateur
-1. Sélectionnez l'utilisateur dans la liste
-2. Cliquez sur "Modifier"
-3. Mettez à jour les informations nécessaires
-4. Sauvegardez les modifications
-
-### Détails d'un Utilisateur
-- **Profil complet** : Informations personnelles et professionnelles
-- **Historique d'activité** : Connexions, actions effectuées
-- **Permissions** : Droits d'accès détaillés
-- **Statistiques** : Activité et performance
-
-## 🏥 Gestion des Patients
-
-### Liste des Patients
-- **Recherche avancée** : Par nom, numéro de dossier, date d'inscription
-- **Filtres** : Par médecin traitant, statut, âge
-- **Tri** : Par nom, date, dernière consultation
-
-### Créer un Nouveau Patient
-1. Accédez au formulaire "Nouveau patient"
-2. Remplissez les informations :
-   - **Données personnelles** : Nom, prénom, date de naissance, sexe
-   - **Coordonnées** : Adresse, téléphone, email
-   - **Informations médicales** : Groupe sanguin, allergies, antécédents
-   - **Médecin traitant** : Attribution d'un médecin
-3. Validez l'enregistrement
-
-### Modifier un Patient
-1. Sélectionnez le patient dans la liste
-2. Cliquez sur "Modifier"
-3. Mettez à jour les informations
-4. Sauvegardez les modifications
-
-### Détails d'un Patient
-- **Dossier médical complet** : Historique des consultations
-- **Informations personnelles** : Coordonnées, situation familiale
-- **Rendez-vous** : Planning et historique
-- **Factures** : État des paiements
-
-## 📈 Statistiques et Rapports
-
-### Rapports Disponibles
-- **Activité quotidienne** : Rendez-vous, consultations
-- **Performance des médecins** : Nombre de patients, satisfaction
-- **Statistiques financières** : Chiffre d'affaires, factures
-- **Évolution temporelle** : Tendances sur différentes périodes
-
-### Export des Données
-- **Format PDF** : Rapports détaillés
-- **Format Excel** : Données brutes pour analyse
-- **Graphiques** : Visualisations personnalisables
-
-## 💬 Messagerie
-
-### Communication Interne
-- **Envoi de messages** : À tous les utilisateurs ou groupes spécifiques
-- **Notifications** : Alertes importantes et annonces
-- **Historique** : Conservation des échanges
-
-### Fonctionnalités
-- Création de conversations de groupe
-- Envoi de fichiers joints
-- Notifications en temps réel
-- Statut de lecture des messages
-
-## ⚙️ Configuration du Système
-
-### Paramètres Généraux
-- **Configuration de la clinique** : Nom, adresse, horaires
-- **Paramètres de sécurité** : Politique de mots de passe
-- **Notifications** : Configuration des alertes
-
-### Gestion des Rôles
-- **Création de rôles personnalisés** : Permissions spécifiques
-- **Attribution des droits** : Accès aux fonctionnalités
-- **Audit des permissions** : Vérification des droits
-
-## 🔍 Surveillance et Audit
-
-### Logs d'Activité
-- **Connexions** : Historique des accès
-- **Actions effectuées** : Modifications, suppressions
-- **Tentatives d'accès** : Sécurité et monitoring
-
-### Alertes de Sécurité
-- **Tentatives de connexion échouées**
-- **Actions suspectes**
-- **Violations de permissions**
-
-## 📱 Interface Utilisateur
-
-### Navigation
-- **Menu latéral** : Accès rapide aux fonctionnalités
-- **Barre supérieure** : Notifications et profil utilisateur
-- **Breadcrumbs** : Navigation contextuelle
-
-### Responsive Design
-- **Adaptation mobile** : Interface optimisée pour tous les écrans
-- **Accessibilité** : Conformité aux standards d'accessibilité
-
-## 🚨 Procédures d'Urgence
-
-### Gestion des Incidents
-1. **Identification du problème**
-2. **Évaluation de l'impact**
-3. **Application des procédures de récupération**
-4. **Communication aux utilisateurs**
-
-### Sauvegarde et Restauration
-- **Sauvegardes automatiques** : Données et configuration
-- **Procédures de restauration** : En cas de panne
-- **Tests de récupération** : Validation des procédures
-
-## 📞 Support et Formation
-
-### Aide aux Utilisateurs
-- **Support technique** : Résolution des problèmes
-- **Formation** : Accompagnement des nouveaux utilisateurs
-- **Documentation** : Guides et tutoriels
-
-### Maintenance
-- **Mises à jour** : Installation des nouvelles versions
-- **Optimisation** : Amélioration des performances
-- **Monitoring** : Surveillance continue du système
-
-## 🔐 Bonnes Pratiques de Sécurité
-
-### Gestion des Mots de Passe
-- **Politique stricte** : Complexité requise
-- **Renouvellement régulier** : Changement obligatoire
-- **Authentification à deux facteurs** : Sécurité renforcée
-
-### Accès et Permissions
-- **Principe du moindre privilège** : Accès minimal nécessaire
-- **Audit régulier** : Vérification des droits
-- **Déconnexion automatique** : Sécurité des sessions
+Ce document décrit les responsabilités, fonctionnalités et bonnes pratiques associées au rôle **Administrateur** du système de gestion clinique *Clinique Rabat*.
 
 ---
 
-**Note importante** : L'administrateur a la responsabilité de maintenir la sécurité et l'intégrité du système. Toute action effectuée est tracée et peut être audité.
+## 🎯 Rôle de l’Administrateur
 
-## 🔗 Références Techniques
+L’administrateur est responsable de la gestion globale du système.  
+Il dispose d’un accès complet aux fonctionnalités de la plateforme et assure :
 
-### Documentation Complète
-- **Documentation Technique** : [Plateforme de Gestion de Clinique Médicale](https://docs.google.com/document/d/11CkpRdISp8IFbqysINgZKNNlVGT6uu5ThWbM-rl8JLQ/edit?tab=t.0)
+- la gestion des utilisateurs et des rôles,
+- l’administration des patients,
+- la supervision de l’activité de la clinique,
+- la sécurité, l’audit et la configuration du système.
 
-### Entités Administrées
-- **Utilisateur** : Gestion des comptes avec rôles (ADMINISTRATEUR, MEDECIN, SECRETAIRE)
-- **Patient** : Dossiers patients avec InfoPersonnel et DossierMedical
-- **HistoriqueAction** : Traçabilité de toutes les actions administrateur
-- **Message** : Communication interne entre utilisateurs
+---
 
-### Contrôles de Sécurité
-- **JWT Authentication** : Jetons d'authentification sécurisés
-- **Spring Security** : Contrôle d'accès basé sur les rôles
-- **Hachage des mots de passe** : Stockage sécurisé des identifiants
-- **Validation des données** : Contrôles côté frontend et backend
+## 🔐 Connexion au système
+
+1. Accéder à la page de connexion
+2. Saisir les identifiants administrateur
+3. Redirection automatique vers le **tableau de bord administrateur**
+
+---
+
+## 📊 Tableau de bord (Dashboard)
+
+### Vue d’ensemble
+Le tableau de bord fournit une vision globale de l’activité de la clinique :
+
+- **Statistiques en temps réel** : patients, rendez-vous, consultations
+- **Graphiques** : évolution des activités, répartition par service
+- **Alertes** : notifications importantes et actions en attente
+
+### Fonctions principales
+- Suivi des indicateurs clés
+- Monitoring de l’activité des médecins
+- Accès rapide aux fonctionnalités critiques
+
+---
+
+## 👥 Gestion des utilisateurs
+
+### Consultation des utilisateurs
+- Liste complète des comptes (administrateurs, médecins, secrétaires)
+- Filtrage par rôle et statut (actif / inactif)
+- Recherche rapide par nom ou email
+
+### Création d’un utilisateur
+1. Cliquer sur **Ajouter un utilisateur**
+2. Renseigner :
+   - informations personnelles (nom, prénom, email, téléphone)
+   - rôle (ROLE_ADMIN, ROLE_MEDECIN, ROLE_SECRETAIRE)
+   - mot de passe temporaire
+3. Valider la création
+
+### Modification et suivi
+- Mise à jour des informations utilisateur
+- Consultation du profil détaillé
+- Historique des actions et connexions
+- Gestion des permissions associées
+
+---
+
+## 🏥 Gestion des patients
+
+### Consultation des patients
+- Recherche par nom, numéro de dossier ou date d’inscription
+- Filtres avancés (médecin traitant, âge, statut)
+- Tri par date ou dernière consultation
+
+### Création d’un patient
+1. Accéder au formulaire **Nouveau patient**
+2. Renseigner :
+   - informations personnelles
+   - coordonnées
+   - données médicales (antécédents, allergies, groupe sanguin)
+   - médecin traitant
+3. Valider l’enregistrement
+
+### Dossier patient
+- Historique médical et consultations
+- Gestion des rendez-vous
+- Suivi des factures et paiements
+
+---
+
+## 📈 Statistiques et rapports
+
+### Rapports disponibles
+- Activité quotidienne et périodique
+- Performance des médecins
+- Indicateurs financiers
+- Analyse des tendances
+
+### Export des données
+- PDF : rapports synthétiques
+- Excel : données exploitables
+- Graphiques personnalisables
+
+---
+
+## 💬 Messagerie interne
+
+- Communication entre utilisateurs
+- Messages individuels ou de groupe
+- Notifications en temps réel
+- Historique des échanges
+
+---
+
+## ⚙️ Configuration du système
+
+### Paramètres généraux
+- Informations de la clinique
+- Paramètres de sécurité
+- Gestion des notifications
+
+### Gestion des rôles et permissions
+- Création de rôles personnalisés
+- Attribution fine des droits
+- Audit régulier des permissions
+
+---
+
+## 🔍 Surveillance et audit
+
+### Logs d’activité
+- Connexions des utilisateurs
+- Actions critiques (création, modification, suppression)
+- Tentatives d’accès non autorisées
+
+### Sécurité
+- Détection d’actions suspectes
+- Alertes de sécurité
+- Traçabilité complète des opérations
+
+---
+
+## 🚨 Sauvegarde et gestion des incidents
+
+### Gestion des incidents
+1. Identification du problème
+2. Évaluation de l’impact
+3. Application des procédures de récupération
+4. Communication aux utilisateurs concernés
+
+### Sauvegarde et restauration
+- Sauvegardes automatiques
+- Procédures de restauration
+- Tests périodiques de récupération
+
+---
+
+## 🔐 Bonnes pratiques de sécurité
+
+- Politique de mots de passe stricte
+- Principe du moindre privilège
+- Audit régulier des accès
+- Déconnexion automatique des sessions
+- Authentification JWT sécurisée
+
+---
+
+## 🔗 Références techniques
+
+### Sécurité
+- Authentification JWT
+- Spring Security (RBAC)
+- Hachage des mots de passe
+- Validation des données côté frontend et backend
+
+### Entités principales
+- **Utilisateur** : gestion des comptes et rôles
+- **Patient** : dossier médical et informations personnelles
+- **HistoriqueAction** : traçabilité des actions
+- **Message** : communication interne
+
+---
+
+> **Note importante** :  
+> Toutes les actions administrateur sont tracées et auditables afin de garantir la sécurité et l’intégrité du système.
